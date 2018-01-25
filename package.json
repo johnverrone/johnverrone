@@ -1,0 +1,22 @@
+{
+  "name": "johnverrone",
+  "version": "1.0.0",
+  "description": "John Verrone's portfolio website",
+  "main": "index.js",
+  "repository": "https://github.com/jverrone3/johnverrone",
+  "author": "John Verrone",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start"
+  },
+  "dependencies": {
+    "babel-plugin-import-static-files": "^1.0.3",
+    "next": "^4.2.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scroll": "^1.7.6",
+    "three": "^0.89.0"
+  }
+}
