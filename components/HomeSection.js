@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class HomeSection extends Component {
   constructor() {
     super();
-    this.state = {top: 300, collapsed: false}
+    this.state = { collapsed: false };
   }
 
   componentDidMount() {
@@ -24,10 +24,8 @@ export default class HomeSection extends Component {
     return (
       <section id="home">
         <div className={this.state.collapsed ? "quote-small" : "quote-big"}>
-          <h2>
-            Hi, I'm John.<br />
-            I make software.
-          </h2>
+          <h2>Hi, I'm John.</h2>
+          <h2>I make software.</h2>
         </div>
         <style jsx>{`
           #home {
@@ -61,6 +59,7 @@ export default class HomeSection extends Component {
             text-align: center;
             font-size: 4em;
             font-weight: 200;
+            margin: 10px 0;
           }
         `}</style>
       </section>
