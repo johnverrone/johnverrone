@@ -16,7 +16,6 @@ export default class Header extends Component {
 
   handleResize = () => {
     const expandMenuWidth = 650;
-    console.log(window.innerWidth);
     if (window.innerWidth > expandMenuWidth) {
       this.setState({ collapseMenu: false });
     } else {
