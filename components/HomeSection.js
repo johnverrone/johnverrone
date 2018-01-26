@@ -25,7 +25,7 @@ export default class HomeSection extends Component {
       <section id="home">
         <div className={this.state.collapsed ? "quote-small" : "quote-big"}>
           <h2>Hi, I'm John.</h2>
-          <h2>I make software.</h2>
+          <h2>I build software.</h2>
         </div>
         <style jsx>{`
           #home {
