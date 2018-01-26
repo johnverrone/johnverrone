@@ -1,16 +1,16 @@
 import React from "react";
 
-export default () => (
+export default ({name, type, img}) => (
   <div className="root">
     <div className="overlay">
       <div className="projectinfo">
-        <h2>The Inking Octopus</h2>
-        <h5>User Interface Design</h5>
+        <h2>{name}</h2>
+        <h5>{type}</h5>
       </div>
     </div>
     <style jsx>{`
       .root {
-        background: url(../static/images/beachbgbw.jpg) no-repeat;
+        background: url(../static/images/${img}) no-repeat;
         position: relative;
         background-position: center;
         background-size: cover;
@@ -53,6 +53,7 @@ export default () => (
 
       h5 {
         font-style: italic;
+        text-transform: lowercase;
       }
     `}</style>
   </div>

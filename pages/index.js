@@ -8,7 +8,7 @@ export default () => (
   <Layout>
     <HomeSection />
     <WorkSection />
-    <AboutSection />
+    {/* <AboutSection /> */}
     <ContactSection />
   </Layout>
 );

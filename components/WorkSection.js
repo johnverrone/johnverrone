@@ -8,10 +8,10 @@ export default () => (
     <div className="container">
       <Grid alignItems="center">
         <GridItem>
-          <ProjectTile />
+          <ProjectTile name="CoffeeTracker" type="Mobile App" img="chemex.jpg"/>
         </GridItem>
         <GridItem>
-          <ProjectTile />
+          <ProjectTile name="Loading Screen" type="Motion Graphics" img="spelling.gif"/>
         </GridItem>
       </Grid>
     </div>

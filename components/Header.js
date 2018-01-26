@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import { Link as LocalLink, animateScroll as scroll } from "react-scroll";
+import { ScrollLink, animateScroll as scroll } from "react-scroll";
+
+const LocalLink = ScrollLink(props => <span {...props}>{props.children}</span>);
 
 export default class Header extends Component {
   constructor() {
@@ -70,19 +72,19 @@ export default class Header extends Component {
           <nav className={this.state.menuOpen ? null : "cl-effect-21"}>
             <div>
               <LocalLink to="work" smooth={true}>
-                <a href="">🗄 Work</a>
+                <a>Work</a>
               </LocalLink>
-              <Link href="/about">
-                <a>👨🏻‍💻 About</a>
-              </Link>
+              <LocalLink to="contact" smooth={true}>
+                <a>Contact</a>
+              </LocalLink>
               <Link href="http://johnverrone.com">
-                <a>📸 Photography</a>
+                <a>Photography</a>
               </Link>
               <Link href="/resume.pdf">
-                <a>📄 Resume</a>
+                <a>Resume</a>
               </Link>
               <Link href="https://github.com/jverrone3">
-                <a>🖥 GitHub</a>
+                <a>GitHub</a>
               </Link>
             </div>
           </nav>
@@ -100,7 +102,7 @@ export default class Header extends Component {
             justify-content: space-between;
             align-items: center;
             transition: all 0.3s;
-            max-height: ${this.state.menuOpen ? '400px' : '100px'};
+            max-height: ${this.state.menuOpen ? "400px" : "100px"};
             z-index: 1000;
           }
 
