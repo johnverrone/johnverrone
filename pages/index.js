@@ -6,7 +6,14 @@ import { Grid, GridItem } from "../components/Grid";
 
 export default () => (
   <Layout>
-    <section id="home" />
+    <section id="home">
+      <div className="quote">
+        <h2>
+          I'm like hey, what's up? hello.<br />
+          My name is lil'<span className="john">John</span> and<br />I'm known for writin' code.
+        </h2>
+      </div>
+    </section>
     <section id="work">
       <SectionHeader>Work</SectionHeader>
       <div className="container">
@@ -34,20 +41,38 @@ export default () => (
     </section>
     <style jsx>{`
       #home {
-        padding: 480px 0;
+        padding: 300px 0 550px 0;
+        text-align: right;
+        margin: 0 auto;
       }
 
       #home::after {
         content: "";
-        background: url("/static/images/desk.jpg");
+        background: url("/static/images/john-park.jpg");
         background-size: cover;
-        background-position: bottom;
+        background-position: 25% center;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         position: absolute;
         z-index: -1;
+      }
+
+      .quote {
+        width: 35%;
+        float: right;
+        margin-right: 15%;
+        text-align: left;
+      }
+
+      h2 {
+        font-size: 4em;
+        font-weight: 200;
+      }
+
+      .john {
+        font-weight: 400;
       }
 
       .container {
