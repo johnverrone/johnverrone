@@ -9,8 +9,8 @@ export default () => (
     <section id="home">
       <div className="quote">
         <h2>
-          I'm like hey, what's up? hello.<br />
-          My name is lil'<span className="john">John</span> and<br />I'm known for writin' code.
+          Hey, I'm John.<br />
+          I make software.
         </h2>
       </div>
     </section>
