@@ -12,7 +12,7 @@ export default () => (
         text-align: right;
         margin: 0 auto;
         height: 960px;
-        background: url("/static/images/desk.jpg") no-repeat scroll;
+        background: url("/static/images/john-park.jpg") no-repeat scroll;
         background-size: cover;
         background-position: 25% center;
         position: relative;

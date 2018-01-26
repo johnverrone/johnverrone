@@ -9,7 +9,11 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "now --public && now alias"
+  },
+  "now": {
+    "alias": "johnverrone"
   },
   "dependencies": {
     "babel-plugin-import-static-files": "^1.0.3",

@@ -102,6 +102,7 @@ export default class Header extends Component {
             align-items: center;
             transition: all 0.3s;
             max-height: ${this.state.menuOpen ? '400px' : '100px'};
+            z-index: 1000;
           }
 
           nav {
