@@ -18,7 +18,7 @@ export const Grid = props => (
 );
 
 export const GridItem = props => (
-  <div className="item">
+  <div className="item" {...props}>
     {props.children}
     <style jsx>{`
       .item {

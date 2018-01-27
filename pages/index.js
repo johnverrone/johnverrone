@@ -5,7 +5,7 @@ import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 
 export default () => (
-  <Layout>
+  <Layout removePadding={true}>
     <HomeSection />
     <WorkSection />
     {/* <AboutSection /> */}

@@ -54,7 +54,7 @@ export default class HomeSection extends Component {
             width: 100%;
             background-color: rgba(255, 255, 255, 0.7);
             padding: 10px 0;
-            font-size: .8em;
+            font-size: 0.8em;
           }
 
           h2 {

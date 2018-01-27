@@ -1,13 +1,11 @@
 import SectionHeader from "./SectionHeader";
 import { Grid, GridItem } from './Grid';
-import FontAwesome from 'react-fontawesome';
 
 export default () => (
   <section id="contact">
     <SectionHeader>Contact</SectionHeader>
     <Grid className="cl-effect-21">
       <GridItem>
-        <FontAwesome name="instagram" size="2x" />
         <a
           href="https://www.linkedin.com/in/johnverrone/"
           target="_blank"

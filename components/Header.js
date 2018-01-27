@@ -101,7 +101,7 @@ export default class Header extends Component {
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
-            transition: all 0.3s;
+            transition: all 0.6s;
             max-height: ${this.state.menuOpen ? "400px" : "100px"};
             z-index: 1000;
           }
