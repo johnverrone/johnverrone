@@ -1,5 +1,5 @@
 import SectionHeader from "./SectionHeader";
-import { Grid, GridItem } from './Grid';
+import { Grid, GridItem } from "../Grid";
 
 export default () => (
   <section id="contact">

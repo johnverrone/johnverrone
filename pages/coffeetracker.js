@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 
 export default () => (
-  <Layout removePadding={true}>
+  <Layout>
     <div className="background">
       <div className="content">
         <h1>Coffee Tracker</h1>

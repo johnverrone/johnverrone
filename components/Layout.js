@@ -1,9 +1,10 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Header from "../components/Header";
 
 export default props => (
-  <div>
+  <Fragment>
     <Head>
       <title>John Verrone</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -26,19 +27,13 @@ export default props => (
         type="text/css"
       />
     </Head>
-    <Header />
-    <div
-      style={
-        !props.removePadding ? { paddingTop: 100, margin: "0 auto" } : null
-      }
-    >
-      {props.children}
-    </div>
+    {props.children}
     <style jsx global>{`
       body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
           Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 12px;
+        height: 100%;
       }
 
       a {
@@ -46,5 +41,5 @@ export default props => (
         text-decoration: none;
       }
     `}</style>
-  </div>
+  </Fragment>
 );

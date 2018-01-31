@@ -1,14 +1,14 @@
 import SectionHeader from "./SectionHeader";
-import { Grid, GridItem } from "./Grid";
+import { Grid, GridItem } from "../Grid";
 import Link from "next/link";
-import ProjectTile from "./ProjectTile";
+import ProjectTile from "../ProjectTile";
 
 export default () => (
   <section id="work">
     <SectionHeader>Work</SectionHeader>
     <div className="container">
       <Grid alignItems="center">
-        <Link href="/coffeetracker" passHref>
+        <Link prefetch href="/coffeetracker" passHref>
           <GridItem>
             <ProjectTile
               name="CoffeeTracker"
@@ -17,13 +17,15 @@ export default () => (
             />
           </GridItem>
         </Link>
-        <GridItem>
-          <ProjectTile
-            name="Loading Screen"
-            type="Motion Graphics"
-            img="spelling.gif"
-          />
-        </GridItem>
+        <Link prefetch href="/animation" passHref>
+          <GridItem>
+            <ProjectTile
+              name="Loading Animation"
+              type="Motion Graphics"
+              img="spelling.gif"
+            />
+          </GridItem>
+        </Link>
       </Grid>
     </div>
   </section>

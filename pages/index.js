@@ -1,10 +1,12 @@
 import Layout from "../components/Layout";
-import HomeSection from "../components/HomeSection";
-import WorkSection from "../components/WorkSection";
-import ContactSection from "../components/ContactSection";
+import Header from "../components/Header";
+import HomeSection from "../components/Sections/HomeSection";
+import WorkSection from "../components/Sections/WorkSection";
+import ContactSection from "../components/Sections/ContactSection";
 
 export default () => (
-  <Layout removePadding={true}>
+  <Layout>
+    <Header />
     <HomeSection />
     <WorkSection />
     <ContactSection />
