@@ -54,7 +54,8 @@ export default class Header extends Component {
               scroll.scrollToTop();
             }}
           >
-            <h2 className="logo">JV</h2>
+            {/* <h2 className="logo">JV</h2> */}
+            <img src="/static/images/john_sig.png" height="50px" />
           </a>
         </div>
         {this.state.collapseMenu ? (
@@ -96,7 +97,7 @@ export default class Header extends Component {
             width: 100%;
             background-color: rgba(255, 255, 255, 0.9);
             border-bottom: thin solid black;
-            padding: ${this.state.shrink ? "3px" : "30px"} 0;
+            padding: ${this.state.shrink ? "3px" : "20px"} 0;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
