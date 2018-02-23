@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Grid = props => (
-  <div className={"root " + props.alignItems}>
+  <div className={"root " + props.alignItems + " " + props.className}>
     {props.children}
     <style jsx>{`
       .root {
