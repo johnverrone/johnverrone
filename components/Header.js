@@ -75,9 +75,6 @@ export default class Header extends Component {
               <LocalLink to="work" smooth={true}>
                 <a>Work</a>
               </LocalLink>
-              <LocalLink to="contact" smooth={true}>
-                <a>Contact</a>
-              </LocalLink>
               <Link href="http://johnverrone.com">
                 <a>Photography</a>
               </Link>

@@ -1,13 +1,12 @@
 import React from "react";
 
 export const Grid = props => (
-  <div className={"root " + props.alignItems + " " + props.className}>
+  <div className={"root "}>
     {props.children}
     <style jsx>{`
       .root {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
       }
 
       .center {

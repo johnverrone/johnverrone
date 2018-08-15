@@ -1,10 +1,9 @@
-import SectionHeader from "./SectionHeader";
-import { Grid, GridItem } from "../Grid";
+import React from 'react';
+import { Grid, GridItem } from './Grid';
 
 export default () => (
-  <section id="contact">
-    <SectionHeader>Contact</SectionHeader>
-    <Grid className="contactBox cl-effect-21">
+  <div className="contactBox">
+    <Grid>
       <GridItem>
         <div className="center">
           <a
@@ -20,7 +19,7 @@ export default () => (
               x="0px"
               y="0px"
               viewBox="0 0 20 20"
-              enable-background="new 0 0 20 20"
+              enableBackground="new 0 0 20 20"
             >
               <g>
                 <g>
@@ -34,7 +33,6 @@ export default () => (
               </g>
             </svg>
           </a>
-          <h6>/in/johnverrone</h6>
         </div>
       </GridItem>
       <GridItem>
@@ -52,7 +50,7 @@ export default () => (
               x="0px"
               y="0px"
               viewBox="0 0 20 20"
-              enable-background="new 0 0 20 20"
+              enableBackground="new 0 0 20 20"
             >
               <path
                 id="twitterPath"
@@ -63,7 +61,6 @@ export default () => (
               />
             </svg>
           </a>
-          <h6>@johnverrone</h6>
         </div>
       </GridItem>
       <GridItem>
@@ -81,7 +78,7 @@ export default () => (
               x="0px"
               y="0px"
               viewBox="0 0 20 20"
-              enable-background="new 0 0 20 20"
+              enableBackground="new 0 0 20 20"
             >
               <path
                 id="mailPath"
@@ -98,11 +95,15 @@ export default () => (
               />
             </svg>
           </a>
-          <h6>john.verrone@gmail.com</h6>
         </div>
       </GridItem>
     </Grid>
     <style jsx>{`
+      .contactBox {
+        width: 50%;
+        margin: 0 auto;
+      }
+
       .socialButton {
         width: 20px;
         height: 20px;
@@ -111,20 +112,21 @@ export default () => (
         outline: none;
         padding: 5px 0;
       }
+
       #twitterPath {
-        fill: #4d4d4d;
+        fill: #FFFFFF;
         transition: fill 0.3s ease;
       }
 
       #linkedinPath {
-        fill: #4d4d4d;
+        fill: #FFFFFF;
         transition: fill 0.3s ease;
       }
 
       #mailPath {
-        fill: #4d4d4d;
+        fill: #FFFFFF;
         transition: fill 0.3s ease;
       }
     `}</style>
-  </section>
+  </div>
 );

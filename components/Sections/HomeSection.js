@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Contact from '../Contact';
 
 export default class HomeSection extends Component {
   constructor() {
@@ -23,13 +24,14 @@ export default class HomeSection extends Component {
   render() {
     return (
       <section id="home">
-        <div className={this.state.collapsed ? "quote-small" : "quote-big"}>
+        <div className={`quote ${this.state.collapsed ? "quote-small" : "quote-big"}`}>
           <h2>Hi, my name is John</h2>
           <h2>and I build software.</h2>
+          <Contact />
         </div>
         <style jsx>{`
           #home {
-            padding: 30% 0 0 0;
+            padding: 25% 0 0 0;
             text-align: right;
             margin: 0 auto;
             height: 600px;
@@ -42,6 +44,10 @@ export default class HomeSection extends Component {
             bottom: 0;
             right: 0;
             z-index: -1;
+          }
+
+          .quote {
+            text-align: center;
           }
 
           .quote-big {
@@ -57,7 +63,6 @@ export default class HomeSection extends Component {
           }
 
           h2 {
-            text-align: center;
             font-size: 4em;
             font-weight: 200;
             margin: 10px 0;
