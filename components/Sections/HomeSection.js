@@ -24,18 +24,18 @@ export default class HomeSection extends Component {
     return (
       <section id="home">
         <div className={this.state.collapsed ? "quote-small" : "quote-big"}>
-          <h2>hi, my name is john</h2>
+          <h2>Hi, my name is John</h2>
           <h2>and I build software.</h2>
         </div>
         <style jsx>{`
           #home {
-            padding: 300px 0 0 0;
+            padding: 30% 0 0 0;
             text-align: right;
             margin: 0 auto;
-            height: 630px;
-            background: url("/static/images/john-park.jpg") no-repeat scroll;
+            height: 600px;
+            background: url("/static/images/john-gc.jpg") no-repeat scroll;
             background-size: cover;
-            background-position: 25% center;
+            background-position: center 93px;
             position: relative;
             top: 0;
             left: 0;
@@ -45,9 +45,8 @@ export default class HomeSection extends Component {
           }
 
           .quote-big {
-            width: 35%;
-            float: right;
-            margin-right: 15%;
+            width: 45%;
+            color: #FFFFFF;
           }
 
           .quote-small {
