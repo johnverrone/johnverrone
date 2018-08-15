@@ -35,7 +35,7 @@ export default class HomeSection extends Component {
             height: 600px;
             background: url("/static/images/john-gc.jpg") no-repeat scroll;
             background-size: cover;
-            background-position: center 93px;
+            background-position: center top;
             position: relative;
             top: 0;
             left: 0;
