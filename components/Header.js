@@ -78,7 +78,7 @@ export default class Header extends Component {
               <Link href="http://johnverrone.com">
                 <a>Photography</a>
               </Link>
-              <Link href="/resume.pdf">
+              <Link href="/static/resume.pdf">
                 <a>Resume</a>
               </Link>
               <Link href="https://github.com/jverrone3">

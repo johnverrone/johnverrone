@@ -6,7 +6,12 @@ import ProjectTile from "../ProjectTile";
 export default () => (
   <section id="work">
     <SectionHeader>Work</SectionHeader>
-    <div className="container">
+    <div className="container center">
+      <h3>coming soon</h3>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   </section>
 );
