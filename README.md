@@ -1,11 +1,7 @@
 ### Hello 👋
 
-<a href="https://github.com/johnverrone?tab=followers">
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/johnverrone?color=green&logo=github">
-</a>
-
-<br /><br />
+<img src="https://myreadme.vercel.app/api/embed/johnverrone?panels=userstatistics,toprepositories,toplanguages,commitgraph" alt="johnverrone GitHub stats" />
 
 📍 Denver, CO.  
-👨‍💻 Software Engineer.    
+👨‍💻 Software Engineer.  
 🌐 [johnverrone.com](https://www.johnverrone.com).
