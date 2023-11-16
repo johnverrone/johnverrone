@@ -1,0 +1,76 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+pluralizeListTitles = "false"
+
+[author]
+  name = "John Verrone"
+
+[params]
+
+  customCSS = ["/css/verrone.css"]
+  googleFonts = ["Open Sans"]
+
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  homeTitle = "john verrone"
+  homeSubtitle = "full time developer. photo/video hobbyist."
+
+  # Metadata mostly used in document's head
+  description = "Web Development | Photo/Video"
+  keywords = "homepage, blog, web, photography, development, programming, videography, filmmaking"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+
+	[[params.social]]
+	name = "twitter"
+	url  = "https://twitter.com/johnverrone"
+
+	[[params.social]]
+	name = "email"
+	url  = "mailto:john.verrone@gmail.com"
+
+	[[params.social]]
+	name = "github"
+	url  = "https://github.com/johnverrone"
+
+	[[params.social]]
+	name = "linkedin"
+	url  = "https://www.linkedin.com/in/johnverrone/"
+
+[languages]
+  [languages.en]
+    title = "John Verrone"
+    subtitle = "full time developer. photo/video hobbyist."
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+    #  logoText = "john verrone"
+    #  logoHomeLink = "/"
+    # or
+    #
+    path = "/images/john_sig.png"
+    alt = "john verrone"
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name       = "blog"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "projects"
+    name       = "projects"
+    url        = "/projects"
+  [[menu.main]]
+    identifier = "resume"
+    name       = "resume"
+    url        = "/resume.pdf"
